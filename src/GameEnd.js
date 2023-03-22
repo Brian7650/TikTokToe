@@ -1,22 +1,24 @@
 import React from "react";
+import './GameEnd.css';
 
-function EndGame({ clearHistory, winCount, restartGame, player, draw }) {
+
+function EndGame({ restartGame, clearHistory, player, draw, winCount }) {
   return (
     <div className="end-game-screen">
-      {!draw && <span className="win-text">{player ? "O WON" : "X WON"}</span>}
-      {draw && <span className="win-text">DRAW GAME</span>}
+      {!draw && <span className="win-text">{player ? "O Won" : "X Won"}</span>}
+      {draw && <span className="win-text">Draw Game</span>}
 
       <span className="win-history">
-        X's WINS: {winCount.X}
+        X's Wins: {winCount.X}
         <br />
-        O's WINS: {winCount.O}
+        O's Wins: {winCount.O}
       </span>
 
       <button className="btn" onClick={restartGame}>
-        RESTART GAME
+        Restart Game
       </button>
       <button className="btn" onClick={clearHistory}>
-        CLEAR HISTORY
+        Clear History
       </button>
     </div>
   );

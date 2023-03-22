@@ -1,15 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: ccsignlanguage, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: ccsignlanguage , sans-serif;
 }
 
 
@@ -37,6 +34,7 @@ code {
   justify-content: center;
   font-size: calc(7px + 2vmin);
   color: white;
+  /* margin-bottom: 80px; */
 }
 
 /* .App-link {
@@ -53,7 +51,7 @@ code {
 }
 
 .tiktoktoename {
-  font-size: 75px;
+  font-size: 55px;
   font-family: "ccsignlanguage", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -69,14 +67,14 @@ code {
 
 .square {
   background: #B9F3FC;
-  height:7rem;
-  width: 7rem;
+  height:6rem;
+  width: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: white;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .square:hover {

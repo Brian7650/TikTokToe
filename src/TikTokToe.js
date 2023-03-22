@@ -25,7 +25,7 @@ function TicTacToe() {
 
   function isGameOver() {
     if (!gameFinished) {
-      //* X win check
+      ///************ X Win Check ************************
       for (let i = 0; i < 8; i++) {
         if (
           grid[winCombination[i][0]] === X_PLAYER &&
@@ -34,12 +34,12 @@ function TicTacToe() {
         ) {
           setGameFinished(true);
           setwinCount({ ...winCount, X: winCount.X + 1 });
-          console.log("X WON");
+          console.log("X Won");
           return;
         }
       }
 
-      //* O win check
+      ///************ O Win Check************************
       for (let i = 0; i < 8; i++) {
         if (
           grid[winCombination[i][0]] === O_PLAYER &&
@@ -48,16 +48,16 @@ function TicTacToe() {
         ) {
           setGameFinished(true);
           setwinCount({ ...winCount, O: winCount.O + 1 });
-          console.log("O WON");
+          console.log("O Won");
           return;
         }
       }
 
-      //* Draw game check
+      ///************* Draw Game Check*************************
       if (!grid.includes(INITIAL)) {
         setDraw(true);
         setGameFinished(true);
-        console.log("DRAW");
+        console.log("Draw");
       }
     }
   }
@@ -95,9 +95,9 @@ function TicTacToe() {
   return (
     <div>
       <span className="win-history">
-        X's WINS: {winCount.X}
+        X's Wins: {winCount.X}
         <br />
-        O's WINS: {winCount.O}
+        O's Wins: {winCount.O}
       </span>
       {gameFinished && (
         <GameEnd
