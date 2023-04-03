@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #93C6E7;
   font-family: ccsignlanguage, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,8 +119,9 @@ code {
 
 .btn {
   background: #93C6E7;
-  color: rgb(63, 118, 170);
-  border: 2px solid rgb(63, 118, 170);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: "ccsignlanguage", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
   padding: 10px 14px;
@@ -132,7 +134,7 @@ code {
 .btn:hover {
   background: rgb(63, 118, 170);
   color: rgb(27, 255, 255);
-  border: 2px solid rgb(27, 255, 255);
+  border: 2px solid #1bffff;
 }
 
 .win-text {
@@ -143,5 +145,10 @@ code {
 .win-history {
   color: white;
   font-size: 2rem;
+  margin: 2rem 0;
+}
+.win-history-2{
+  color: white;
+  font-size: 3rem;
   margin: 2rem 0;
 }

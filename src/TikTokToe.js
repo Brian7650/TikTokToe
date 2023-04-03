@@ -96,9 +96,11 @@ function TicTacToe() {
     <div>
       <span className="win-history">
         X's Wins: {winCount.X}
+        </span>
         <br />
+       <span className="win-history-2"> 
         O's Wins: {winCount.O}
-      </span>
+       </span>
       {gameFinished && (
         <GameEnd
           winCount={winCount}
