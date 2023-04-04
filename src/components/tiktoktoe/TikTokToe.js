@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Square from "./Square";
-import GameEnd from "./GameEnd";
+import Square from "../square/Square";
+import GameEnd from "../gameend/GameEnd";
 
 const INITIAL = "";
 const X_PLAYER = "X";

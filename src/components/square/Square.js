@@ -1,4 +1,6 @@
 import React from "react";
+import './Square.css';
+
 
 function Square({ clickedArray, handleClick }) {
   return (

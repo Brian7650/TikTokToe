@@ -1,22 +1,13 @@
-// import logo from './components/logos/logo.png';
 import { gsap } from 'gsap';
 import React, { useRef, useEffect } from 'react';
 import './App.css';
-import TikTokToe from "./TikTokToe";
+import TikTokToe from "./components/tiktoktoe/TikTokToe";
 
 function App() {
   
   const headerRef = useRef(null);
 
 useEffect(() => {
-  
-  // gsap.to(headerRef.current, {
-  //   rotation:'360', 
-  //   duration:'1',
-  //   // autoAlpha: 0, 
-  //   ease: 'none',
-  //   repeat: 3
-  // });
 
   const ctx = gsap.context(() => {
     const tl = gsap.timeline();
@@ -24,11 +15,12 @@ useEffect(() => {
       headerRef.current,
       
       {
-        // transformOrigin: "100% 0",
-        scaleX: 1.5
+        scaleX: 1.5,
+        screenY: 1.3
       },
       {
-        scaleX: 1
+        scaleX: 1,
+        scaleY:1
       },
       "headerRef"
     );
@@ -43,7 +35,6 @@ useEffect(() => {
   return (
     <div className="App">
       <header  className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />  */}
         <div ref={headerRef} className="tiktoktoename">Tik.Tok.Toe</div>
         <TikTokToe />
       </header>
